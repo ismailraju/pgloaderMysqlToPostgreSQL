@@ -33,5 +33,9 @@ $ docker run --rm --name pgloader dimitri/pgloader:latest pgloader --help
 docker run --rm --name pgloader dimitri/pgloader:latest pgloader --debug mysql://pgloader:1234@host.docker.internal:3306/moe_dev2 postgresql://postgres:''@host.docker.internal:5432/source_db
 
 
+## Reference
 
+https://www.digitalocean.com/community/tutorials/how-to-migrate-mysql-database-to-postgres-using-pgloader
+https://hub.docker.com/r/dimitri/pgloader/
+https://turreta.com/2018/09/22/using-pgloader-in-docker-container-for-hosts-databases/
 
