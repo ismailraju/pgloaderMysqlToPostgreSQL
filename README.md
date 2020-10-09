@@ -24,7 +24,9 @@ GRANT ALL PRIVILEGES ON DATABASE source_db TO postgres;
 
 
 $ docker pull dimitri/pgloader
+
 $ docker run --rm --name pgloader dimitri/pgloader:latest pgloader --version
+
 $ docker run --rm --name pgloader dimitri/pgloader:latest pgloader --help
 
 
