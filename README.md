@@ -5,7 +5,9 @@
 ## Mysql( 10.4.11-MariaDB,windows 10 )
 
 create user 'pgloader'@'%' identified by '1234';
+
 grant all privileges on *.* to 'pgloader'@'%' with grant option;
+
 flush privileges;
 
 
@@ -13,8 +15,11 @@ flush privileges;
 
 
 CREATE DATABASE source_db;
+
 GRANT CONNECT ON DATABASE source_db TO postgres;
+
 GRANT ALL PRIVILEGES ON DATABASE source_db TO postgres;
+
 
 
 
@@ -40,6 +45,8 @@ ALTER TABLE moe_dev2.account_type  SET SCHEMA public;
 ## Reference
 
 https://www.digitalocean.com/community/tutorials/how-to-migrate-mysql-database-to-postgres-using-pgloader
+
 https://hub.docker.com/r/dimitri/pgloader/
+
 https://turreta.com/2018/09/22/using-pgloader-in-docker-container-for-hosts-databases/
 
