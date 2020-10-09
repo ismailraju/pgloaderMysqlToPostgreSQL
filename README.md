@@ -32,6 +32,9 @@ $ docker run --rm --name pgloader dimitri/pgloader:latest pgloader --help
 
 docker run --rm --name pgloader dimitri/pgloader:latest pgloader --debug mysql://pgloader:1234@host.docker.internal:3306/moe_dev2 postgresql://postgres:''@host.docker.internal:5432/source_db
 
+## Post Process
+\d
+ALTER TABLE account_type  SET SCHEMA public;
 
 ## Reference
 
